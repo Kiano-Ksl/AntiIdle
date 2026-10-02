@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/preview.jpg" alt="AntiIdle Preview" width="600">
+  <img src="https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/preview.gif" alt="AntiIdle Animated Preview" width="100%">
   
   # AntiIdle
   
