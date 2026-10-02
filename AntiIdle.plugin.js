@@ -14,7 +14,8 @@ module.exports = class AntiIdle {
 
     start() {
         const { Webpack, Patcher, Logger, UI } = BdApi;
-
+
+
         const IdleStore = Webpack.getStore("IdleStore");
 
         if (!IdleStore) {
@@ -28,11 +29,13 @@ module.exports = class AntiIdle {
             if (typeof IdleStore.getIdleSince === "function") {
                 Patcher.instead(this.patcherId, IdleStore, "getIdleSince", () => null);
             }
-
+
+
             if (typeof IdleStore.isIdle === "function") {
                 Patcher.instead(this.patcherId, IdleStore, "isIdle", () => false);
             }
-
+
+
             if (typeof IdleStore.isAFK === "function") {
                 Patcher.instead(this.patcherId, IdleStore, "isAFK", () => false);
             }
