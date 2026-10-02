@@ -9,16 +9,16 @@
 
 > BetterDiscord plugin that firmly prevents your Discord status from automatically changing to Idle during periods of inactivity.
 
-## Technical Specifications
+## Installation Guide
 
-| Attribute | Detail |
-| :--- | :--- |
-| **Developer** | Kiano-Ksl |
-| **Current Version** | 1.0.3 |
-| **Target Architecture** | Flux Dispatcher (`IdleStore`) |
-| **Patched Methods** | `getIdleSince`, `isIdle`, `isAFK` |
-| **Platform** | BetterDiscord |
+> **Prerequisite:** You must have [BetterDiscord](https://betterdiscord.app/) installed on your client before using this plugin.
 
+1. Download the latest release of [`AntiIdle.plugin.js`](https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/AntiIdle.plugin.js).
+2. Open your Discord client and navigate to **User Settings**.
+3. Scroll down to the BetterDiscord section and select **Plugins**.
+4. Click the **Open Plugin Folder** button at the top of the interface.
+5. Transfer the downloaded `.plugin.js` file into this directory.
+6. Return to the Discord interface and toggle the **AntiIdle** switch to active.
 ## Core Features
 
 *   **Consistent Presence:** Maintains a strict green "Online" status regardless of physical absence from the workstation.
@@ -27,6 +27,8 @@
 *   **Zero Synthetic Events:** Abandons unstable artificial mouse/keyboard simulations in favor of direct state overrides.
 
 ## Installation Guide
+
+> **Prerequisite:** You must have [BetterDiscord](https://betterdiscord.app/) installed on your client before using this plugin.
 
 1. Download the latest release of [`AntiIdle.plugin.js`](https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/AntiIdle.plugin.js).
 2. Open your Discord client and navigate to **User Settings**.
