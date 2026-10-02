@@ -7,7 +7,7 @@
   [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 </div>
 
-> A highly efficient BetterDiscord plugin that firmly prevents your Discord status from automatically changing to Idle during periods of inactivity.
+> BetterDiscord plugin that firmly prevents your Discord status from automatically changing to Idle during periods of inactivity.
 
 ## Technical Specifications
 
