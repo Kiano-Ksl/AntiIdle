@@ -14,8 +14,7 @@ module.exports = class AntiIdle {
 
     start() {
         const { Webpack, Patcher, Logger, UI } = BdApi;
-
-        // Mencari "Gudang Memori" utama Discord yang mengatur status AFK
+
         const IdleStore = Webpack.getStore("IdleStore");
 
         if (!IdleStore) {
@@ -25,17 +24,15 @@ module.exports = class AntiIdle {
         }
 
         try {
-            // Memaksa fungsi getIdleSince agar selalu me-return null (artinya kita tidak pernah mulai idle)
+            // fungsi getIdleSince
             if (typeof IdleStore.getIdleSince === "function") {
                 Patcher.instead(this.patcherId, IdleStore, "getIdleSince", () => null);
             }
-
-            // Memaksa fungsi isIdle agar selalu menjawab false (tidak idle)
+
             if (typeof IdleStore.isIdle === "function") {
                 Patcher.instead(this.patcherId, IdleStore, "isIdle", () => false);
             }
-
-            // Memaksa fungsi isAFK agar selalu menjawab false (tidak AFK)
+
             if (typeof IdleStore.isAFK === "function") {
                 Patcher.instead(this.patcherId, IdleStore, "isAFK", () => false);
             }
