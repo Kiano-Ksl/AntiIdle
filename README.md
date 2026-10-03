@@ -1,30 +1,24 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/preview.gif" alt="AntiIdle Animated Preview" width="100%">
+  <img src="https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/preview.gif" alt="AntiIdle Preview" width="100%">
   
   # AntiIdle
-  
-  [![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)](https://github.com/Kiano-Ksl/AntiIdle)
-  [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 </div>
 
-> BetterDiscord plugin that firmly prevents your Discord status from automatically changing to Idle during periods of inactivity.
+A simple BetterDiscord plugin that stops your account from going Idle (moon icon) when you are away from your keyboard. 
+It works by patching the internal `IdleStore` so Discord always thinks you are active.
 
-## Installation Guide
+## Installation
+> **Note:** You must have [BetterDiscord](https://betterdiscord.app/) installed first.
 
-> **Prerequisite:** You must have [BetterDiscord](https://betterdiscord.app/) installed on your client before using this plugin.
+1. Download [`AntiIdle.plugin.js`](https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/AntiIdle.plugin.js).
+2. Open your Discord Settings -> Plugins.
+3. Click **Open Plugin Folder**.
+4. Move the downloaded file into that folder.
+5. Enable the plugin.
 
-1. Download the latest release of [`AntiIdle.plugin.js`](https://raw.githubusercontent.com/Kiano-Ksl/AntiIdle/main/AntiIdle.plugin.js).
-2. Open your Discord client and navigate to **User Settings**.
-3. Scroll down to the BetterDiscord section and select **Plugins**.
-4. Click the **Open Plugin Folder** button at the top of the interface.
-5. Transfer the downloaded `.plugin.js` file into this directory.
-6. Return to the Discord interface and toggle the **AntiIdle** switch to active.
-## Core Features
+## Changelog
+**v1.0.3**
+- Changed patching method to target `IdleStore` directly.
 
-*   **Consistent Presence:** Maintains a strict green "Online" status regardless of physical absence from the workstation.
-*   **Deep State Integration:** Bypasses superficial UI checks by directly manipulating Discord's internal `IdleStore` memory states.
-*   **Absolute Clean-up:** Guarantees zero memory leaks. Completely restores original functions and states upon plugin deactivation.
-*   **Zero Synthetic Events:** Abandons unstable artificial mouse/keyboard simulations in favor of direct state overrides.
-
----
-*This project is distributed under the [MIT License](https://choosealicense.com/licenses/mit/).*
+## License
+MIT
